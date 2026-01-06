@@ -9,11 +9,11 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name = "roles")
 public class UserRole {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "role_id")
     private int roleId;
-    @Column(name = "role_name")
     private String roleName;
 }
